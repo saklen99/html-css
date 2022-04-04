@@ -1,0 +1,45 @@
+.mn{
+    padding: 25px;
+    background-color:white;
+    margin: 150px;
+    max-width: 400px;
+    
+}
+body
+{
+    background-color: skyblue;
+} 
+.mn header
+{
+    font-size: 30px;
+    font-weight: 600;
+}   
+
+
+.inputf button{
+    color:white;
+    background-color: blue;
+    
+    outline: none;
+}
+
+
+
+.tololist li{
+    list-style: none;
+    height: 35px;
+    background-color: whitesmoke;
+    
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+
+.footer button{
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
