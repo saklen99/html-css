@@ -1,0 +1,26 @@
+<html>
+    <body>
+            <p> please enter number between 1 to 5 </p>
+            <input type="text" id="txt1">
+            <button type="button" onclick="myfun()">test input</button>
+            <p id="p1"></p>
+            <script>
+                function myfun()
+                {
+                    const message = document.getElementById("p1");
+                    message.innerHTML="";
+                    let x=document.getElementById("txt1").Value;
+                    try{
+                        if(x=="") throw "empty";
+                        if(x<5) throw "too low";
+                        if(x>10) throw "too high";
+                    }
+                    catch(err){
+                        message.innerHTML="input is" +err;
+
+                    }
+
+                }
+            </script>
+    </body>
+</html>
