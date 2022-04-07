@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            function myfun(arg1, arg2) {
+              this.firstName = arg1;
+                this.lastName  = arg2;
+            }
+           const myobj= new myfun("sp","pn");    
+            document.getElementById("demo").innerHTML=myobj.firstName
+        </script>
+
+    </body>
+
+</html>
+
+    
