@@ -1,0 +1,38 @@
+.container
+{
+    width: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+*{
+    box-sizing: border-box;
+}
+.text
+{
+    text-align: center;
+    font-size: 22px; 
+    margin-bottom: 2px;
+    color:blue;
+    padding: 8px 14px;
+    width: 100px;
+    position: absolute;
+   
+}
+  
+.pre, .next
+{
+    position: absolute;
+    font-size: 22px;
+    color: black;
+    top: 50%;
+    padding:10px 12px;
+    cursor: pointer;
+    width: auto;
+}
+.next{
+    right: 10%
+}
+.pre{
+    left:10%
+}
