@@ -1,7 +1,14 @@
 import './Expenseitem.css' 
-import react from 'react'
+
+import {useState} from 'react'
+
 function Expenseitem(props) {
-    console.log('props', props)
+    const [title, setTitle] = useState(props.title);
+
+    const ch = () =>{
+        setTitle('update');
+        console.log(title);
+    }
 
     return (
     <div className="expense-item">
@@ -10,11 +17,11 @@ function Expenseitem(props) {
         </div>
         <div className="expense-item__description">
             <h2>
-                {props.title}
+                {title}
             </h2>
     <div className="expense-item__price">{props.amount}</div>
             </div>
-            <button>change title</button>
+            <button onClick={ch}>change title</button>
         </div>
     
     );
