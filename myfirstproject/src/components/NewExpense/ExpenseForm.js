@@ -1,23 +1,22 @@
 import React, {useState} from 'react';
 import './ExpenseForm.css';
 
-const ExpenseForm = () => {
+const ExpenseForm = ({onAddExpense}) => {
     const [enteredTitle,setEnteredTitle] =useState('');
     const [enteredAmount,setEnteredAmount] =useState('');
-    console.log('enteredTitle',enteredTitle)
-    console.log('enteredAmount',enteredAmount)
-
 
     const submitHandler = (event) => {
         event.preventDefault();
 
         const expenseData = {
             title:enteredTitle,
-            Amount:enteredAmount            
+            amount:enteredAmount ,
+            id: Math.random().toString()          
         };
         console.log(expenseData);
         setEnteredTitle('');
         setEnteredAmount('');
+        onAddExpense(expenseData)
     };
 
     return ( 
@@ -31,10 +30,10 @@ const ExpenseForm = () => {
                 <label>Amount</label>
                 <input type="number" value={enteredAmount} onChange={(e)=>setEnteredAmount(e.target.value)}></input> 
             </div>
-            <div className="new-expense__control">
+            {/* <div className="new-expense__control">
                 <label>Date</label>
                 <input type="date"></input> 
-            </div>
+            </div> */}
             
         </div>
         <div className="new-expense__actions">
