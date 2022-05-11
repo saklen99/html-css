@@ -9,7 +9,7 @@ return(
         <div className={classes.backdrop}/>
 <Card className={classes.modal}>
     <header className={classes.header}>
-        <h4>{propes.title}</h4>
+        <h2>{propes.title}</h2>
     </header>
     <div className={classes.content}>
     <p> {propes.message}</p>
