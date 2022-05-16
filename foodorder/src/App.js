@@ -1,11 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Header from './components/Layout/Header';
+import Meals from './components/Meals/Meals';
 
 function App() {
   return (
-    <div>
-      <h2>start</h2>
-    </div>
+    <>
+      <Header/>
+      <main>
+        <Meals/>
+      </main>
+    </>
   );
 }
 
