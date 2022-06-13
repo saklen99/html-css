@@ -1,13 +1,18 @@
 import { Formik, Field, Form } from "formik"
+import { useDispatch } from "react-redux"
+import { AddValue } from '../User/action'
 
 
 const FormData = () => {
-     
+    const dispatch = useDispatch();
     return (
         <>
             <Formik initialValues={{ first: "", last: "", email: "", contect: "" }}
                 onSubmit={(values) => {
-                    console.log("value", values)
+                    //console.log("value", values)
+                    dispatch(AddValue({
+                        title:values
+                    }))
                   
                 }} >
                 {(values) => (
@@ -24,6 +29,7 @@ const FormData = () => {
                             <Field name="contect" type="text" /><br />
 
                             <button type="submit" >ADD</button>
+                            
                         </div>
                     </Form>
                 )}
@@ -36,3 +42,6 @@ const FormData = () => {
 }
 
 export default FormData
+
+
+
