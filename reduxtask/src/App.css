@@ -36,4 +36,27 @@
     transform: rotate(360deg);
   }
 }
+ 
+.table td,th{
+ width: 250px; 
+}
+input[type=text] {
+  
+ 
+  margin: 8px 0;
+  display: inline-block;
+  
+}
+Form{
+  margin: 0%  5%  2%  37%;
+  
+}
+[type=submit]{
+  margin: 0%  5%  2%  10%;
+  width: 150px;
+  cursor: pointer;
+  background-color: rgb(155, 184, 155);
+}
+
+  
 
